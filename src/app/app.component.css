@@ -1,0 +1,56 @@
+.bg{
+    height: 100vh;
+}
+.card{
+    width: 400px;
+    height: 500px;
+    margin: 0;
+
+}
+
+.info{
+    position: relative;
+    top: -70%;
+}
+
+.clouds{
+    top: 0;
+    left: 0;
+}
+.clouds img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(3s * var(--i)) linear infinite;
+    -webkit-animation: animate calc(3s * var(--i)) linear infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+
+    }
+    25%, 75%{
+    opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+.p1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p1 h5{
+    margin-left: 10px;
+}
+.p2 h5{
+    margin-left: 10px;
+}
