@@ -5,7 +5,7 @@
   </form>
     <div class="card m-0 border-0 shadow">
     <div class="upper w-100 h-75 position-relative">
-      <img src="../../docs/assets/night.jpg" alt="" class="w-100 h-100 object-fit-fill rounded z-2" *ngIf="weatherData.main.temp < 300">
+      <img src="../assets/night.jpg" alt="" class="w-100 h-100 object-fit-fill rounded z-2" *ngIf="weatherData.main.temp < 300">
       <img src="../assets/morning.jpg" alt="" class="w-100 h-100 object-fit-cover rounded" *ngIf="weatherData.main.temp >= 300">
       <img src="../assets/snow.webp" alt="" class="w-100 h-100 object-fit-cover rounded" *ngIf="weatherData.main.temp <= 0">
       <div class="info d-flex flex-column justify-content-center align-items-center" *ngIf="weatherData">
