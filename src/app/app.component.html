@@ -5,25 +5,25 @@
   </form>
     <div class="card m-0 border-0 shadow">
     <div class="upper w-100 h-75 position-relative">
-      <img src="../assets/night.jpg" alt="" class="w-100 h-100 object-fit-fill rounded z-2" *ngIf="weatherData.main.temp < 300">
-      <img src="../assets/morning.jpg" alt="" class="w-100 h-100 object-fit-cover rounded" *ngIf="weatherData.main.temp >= 300">
-      <img src="../assets/snow.webp" alt="" class="w-100 h-100 object-fit-cover rounded" *ngIf="weatherData.main.temp <= 0">
+      <img src="./assets/night.jpg" alt="" class="w-100 h-100 object-fit-fill rounded z-2" *ngIf="weatherData.main.temp < 300">
+      <img src="./assets/morning.jpg" alt="" class="w-100 h-100 object-fit-cover rounded" *ngIf="weatherData.main.temp >= 300">
+      <img src="./assets/snow.webp" alt="" class="w-100 h-100 object-fit-cover rounded" *ngIf="weatherData.main.temp <= 0">
       <div class="info d-flex flex-column justify-content-center align-items-center" *ngIf="weatherData">
         <h4 class="text-white z-3 mb-3 fs-3">{{weatherData.name}}</h4>
         <h1 class="text-white z-3 fw-bolder" [style]="{fontSize: '55px'}">{{weatherData.main.temp | number:'1.0-0' }}°C</h1>
         <h5 class="text-white z-3">{{weatherData.weather[0].description}}</h5>
       </div>
       <div class="clouds position-absolute w-100 h-100 overflow-hidden">
-        <img src="../assets/cloud1.png" alt="" style="--i:1;">
-        <img src="../assets/cloud2.png" alt="" style="--i:2;">
-        <img src="../assets/cloud3.png" alt="" style="--i:3;">
-        <img src="../assets/cloud4.png" alt="" style="--i:4;">
-        <img src="../assets/cloud5.png" alt="" style="--i:5;">
-        <img src="../assets/cloud1.png" alt="" style="--i:10;">
-        <img src="../assets/cloud2.png" alt="" style="--i:9;">
-        <img src="../assets/cloud3.png" alt="" style="--i:8;">
-        <img src="../assets/cloud4.png" alt="" style="--i:7;">
-        <img src="../assets/cloud5.png" alt="" style="--i:6;">
+        <img src="./assets/cloud1.png" alt="" style="--i:1;">
+        <img src="./assets/cloud2.png" alt="" style="--i:2;">
+        <img src="./assets/cloud3.png" alt="" style="--i:3;">
+        <img src="./assets/cloud4.png" alt="" style="--i:4;">
+        <img src="./assets/cloud5.png" alt="" style="--i:5;">
+        <img src="./assets/cloud1.png" alt="" style="--i:10;">
+        <img src="./assets/cloud2.png" alt="" style="--i:9;">
+        <img src="./assets/cloud3.png" alt="" style="--i:8;">
+        <img src="./assets/cloud4.png" alt="" style="--i:7;">
+        <img src="./assets/cloud5.png" alt="" style="--i:6;">
 
       </div>
     </div>
@@ -32,12 +32,12 @@
 
     <div class="lower container d-flex flex-column justify-content-center align-items-center">
       <div class="p1 col-lg-12 d-flex flex-row justify-content-around align-items-center mb-3">
-        <div> <img src="../assets/icons8-temperature-48.png" class="w-50 h-50"> <h5>{{weatherData.main.temp_max | number:'1.0-0' }}°C</h5> </div>
-        <div> <img src="../assets/icons8-dew-point-48.png" class="w-50 h-50">  <h5>{{weatherData.main.temp_min | number:'1.0-0' }}°C</h5></div>
+        <div> <img src="./assets/icons8-temperature-48.png" class="w-50 h-50"> <h5>{{weatherData.main.temp_max | number:'1.0-0' }}°C</h5> </div>
+        <div> <img src="./assets/icons8-dew-point-48.png" class="w-50 h-50">  <h5>{{weatherData.main.temp_min | number:'1.0-0' }}°C</h5></div>
       </div>
       <div class="p2 col-lg-12 d-flex flex-row justify-content-around align-items-center">
-        <div> <img src="../assets/icons8-sun-94.png" width="43" height="40">  <h5>{{weatherData.main.pressure | number:'1.0-0' }}°C</h5> </div>
-        <div> <img src="../assets/icons8-wind-48.png" class="w-50 h-50">  <h5>{{weatherData.main.humidity | number:'1.0-0' }}°C</h5></div>
+        <div> <img src="./assets/icons8-sun-94.png" width="43" height="40">  <h5>{{weatherData.main.pressure | number:'1.0-0' }}°C</h5> </div>
+        <div> <img src="./assets/icons8-wind-48.png" class="w-50 h-50">  <h5>{{weatherData.main.humidity | number:'1.0-0' }}°C</h5></div>
       </div>
     </div>
   </div>
